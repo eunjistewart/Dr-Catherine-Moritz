@@ -1,0 +1,285 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+body {
+  color: var(--primary);
+  font-size: 18px;
+  font-family: "DM Serif Display", serif;
+  margin: 0 auto;
+  padding: 0 1rem;
+  background: var(--background);
+  max-width: 1024px;
+
+  /* Add this to make the webpage take up the whole screen */
+  height: 100%;
+
+  transition: color 0.5s;
+  transition: background 0.5s;
+
+  --dark-background: #484747;
+  --dark-primary: #ffffff;
+  --dark-link: #0072c6;
+
+  --light-background: #ffffff;
+  --light-primary: #484747;
+  --light-link: #0072c6;
+
+  --add-additional: #484747;
+
+  --background: var(--light-background);
+  --primary: var(--light-primary);
+  --link: var(--light-link);
+  --additional: var(--add-additional);
+}
+a {
+  color: var(--link);
+}
+
+h1,
+h2,
+h3 {
+  font-family: "DM Serif Display", serif;
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+/* separator bars */
+.col-sm-12 {
+  border-block-end: 1px solid var(--primary);
+}
+
+nav,
+section {
+  border-block-end: 1px solid var(--primary);
+  /* This adds the horizontal line at the bottom of <nav> and <section> elements */
+}
+
+.col-sm-12 img {
+  width: 10%;
+}
+
+header {
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+nav li {
+  margin: 0;
+  padding-bottom: 0.5rem;
+}
+
+.navbar-links {
+  text-decoration: none;
+  color: var(--primary);
+}
+
+.navbar-links-container {
+  height: 30px; /* Set your desired fixed height */
+  overflow: hidden;
+}
+
+/* container for dark-mode toggle */
+.controls {
+  margin-top: -5%;
+  padding-top: 0;
+  display: flex;
+  justify-content: end;
+  padding: 1rem 0;
+}
+
+.no-line-before-dark-mode {
+  margin-bottom: -1%;
+  border-block-end: none;
+}
+
+.col-md-7 span {
+  font-size: 4rem;
+}
+
+.col-md-7 p {
+  line-height: 1.8rem;
+}
+
+.first-p {
+  margin-top: 2.5rem;
+}
+
+.second-p {
+  margin-bottom: 2.5rem;
+}
+
+.col-md-5 > img {
+  width: 100%;
+  padding-right: 40px;
+}
+
+btn {
+  background-color: #0072c6;
+}
+
+.jumbotron {
+  margin-bottom: 2rem;
+  padding-bottom: 3rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.services-text-row {
+  margin: 0 0 50px;
+}
+
+.col-sm-2 {
+  background-color: #e5e5e5;
+  border: 1px white solid;
+}
+
+.service-title.divider {
+  border-bottom: 2px solid black;
+  padding-bottom: 5px; /* Optional: Add some spacing between the title and description */
+}
+
+.service-title {
+  font-size: 1.5rem;
+  color: var(--add-additional);
+}
+
+.service-description,
+.bio-description,
+.services-pg-description,
+.contact-dsc {
+  font-size: 1rem;
+  text-align: left;
+  color: var(--add-additional);
+}
+
+.home-service-container {
+  margin-bottom: 5%;
+  border-block-end: none;
+}
+
+.footer-container {
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.home-footer-container {
+  margin-bottom: 5%;
+  border-block-start: 1px solid var(--primary);
+}
+
+.left-content {
+  text-align: left;
+}
+
+.right-content {
+  text-align: right;
+}
+
+.copyright-text {
+  font-size: 18px;
+}
+
+.web-design {
+  font-size: 16px;
+}
+
+.indent-first-sentence {
+  padding-left: 20px;
+  display: block;
+}
+
+.bio-title,
+.services-pg-title,
+.contact-title {
+  margin-bottom: 5%;
+  text-align: center;
+  margin-bottom: 5%;
+}
+
+.bio-title span,
+.contact-title span {
+  font-size: 4rem;
+}
+
+.bio-description,
+.services-pg-description,
+.contact-description {
+  line-height: 1.9rem;
+  word-spacing: 0.2rem;
+  background-color: #e5e5e5;
+  padding: 5%;
+}
+
+.services-img {
+  max-width: 80%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.services-pg-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.services-jumbotron {
+  flex: 1;
+}
+
+.services-space {
+  margin-top: 5%;
+  margin-right: 10%;
+}
+
+.services-categories {
+  font-size: 2rem;
+}
+
+.col-md-12.contact-description {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.contact-description {
+  padding: 5%;
+  flex: 1;
+}
+
+.text-message {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.text-message img {
+  max-width: 100%;
+  height: auto;
+}
